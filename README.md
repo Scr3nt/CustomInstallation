@@ -14,3 +14,15 @@
 - MMKV (async storage plus performant)
 - Jest
 - Detox
+
+## Liste des librairies a rajouter au cas par cas
+
+- LogRocket (pour traquer les bugs)
+- GitGuardian (pour etre sur de la sécurité (clés api etc))
+- Service de Notification
+- MobState (reduxlike)
+- Reassure (pour mesurer les perfs)
+- AppODeal (pour les pubs)
+- RevenueCat (pour les achats inapp)
+- Supabase (pour le back (GraphQL))
+- Rive (pour les animations)
