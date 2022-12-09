@@ -23,7 +23,7 @@ gitmoji -c
 ✔ Gitmojis fetched successfully, these are the new emojis:
 ? Choose a gitmoji: 🎉  - Begin a project.
 ? Enter the scope of current changes:
-? Enter the commit title [24/48]: Creation & Configuration
+? Enter the commit title [24/48]: creation & configuration
 ? Enter the commit message:
 ```
 
@@ -51,6 +51,6 @@ gitmoji -g
 gitmoji -c
 ? Choose a gitmoji: ➕  - Add a dependency.
 ? Enter the scope of current changes:
-? Enter the commit title [15/48]: Add Expo Router
+? Enter the commit title [15/48]: add Expo Router
 ? Enter the commit message:
 ```
