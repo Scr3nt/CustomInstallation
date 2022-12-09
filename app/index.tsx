@@ -1,3 +1,5 @@
+import Button from "@/src/components/Buttons/Button";
+import CustomButton from "@/src/components/Buttons/CustomButton";
 import theme from "@/theme";
 import { ThemeProvider } from "@shopify/restyle";
 import { useLink } from "expo-router";
@@ -21,6 +23,8 @@ export default function Home() {
           <Text>Go vers settings</Text>
         </TouchableOpacity>
         <Text>Tu es sur home</Text>
+        <Button />
+        <CustomButton />
       </View>
     </ThemeProvider>
   );
