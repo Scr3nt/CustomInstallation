@@ -31,7 +31,8 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "scheme": "custominstallation"
+    "scheme": "custominstallation",
+    "plugins": ["@config-plugins/detox"]
     
   }
 }
