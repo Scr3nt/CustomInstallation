@@ -215,26 +215,36 @@ et ajouter ceci dans le fichier de configuration de VSCode
 
 `yarn add lint-staged --dev`
 
+`npx husky install`
+
+```
+npx husky add .husky/pre-commit "npm test"
+git add .husky/pre-commit
+```
+
+Modifier `.husky/pre-commit`
+
+```
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx lint-staged
+```
+
 Ajouter cela en dessous de `devDependencies` dans `package.json`
 
 ```
 "lint-staged": {
-    "src/**/*.{ts,tsx}": [
-      "eslint --ext .tsx --ext .ts src/ --fix"
-    ],
-    "./src/**": [
-      "prettier --write ."
-    ],
-    "app/**/*.{ts,tsx}": [
-      "eslint --ext .tsx --ext .ts app/ --fix"
-    ],
-    "./app/**": [
-      "prettier --write ."
+    "*.{ts,tsx}": [
+      "eslint --fix"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+```
+
+Ajouter cela dans `scripts` dans `package.json`
+
+```
+"lint": "eslint .",
+"prepare": "husky install",
+"postinstall": "husky install"
 ```

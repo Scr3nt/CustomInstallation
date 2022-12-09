@@ -1,5 +1,5 @@
 import { useLink } from "expo-router";
-import { Button, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function Home() {
   const link = useLink();
@@ -8,7 +8,6 @@ export default function Home() {
       <TouchableOpacity testID="click-user" onPress={() => link.push("/user")}>
         <Text>Go vers user</Text>
       </TouchableOpacity>
-
       <TouchableOpacity
         testID="click-settings"
         onPress={() => link.push("/settings")}
