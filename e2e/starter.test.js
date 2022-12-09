@@ -1,23 +1,33 @@
-describe('Example', () => {
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+describe("FirstTest", () => {
   beforeAll(async () => {
     await device.launchApp();
   });
 
-  beforeEach(async () => {
-    await device.reloadReactNative();
+  it("should have home screen", async () => {
+    await expect(element(by.id("home"))).toBeVisible();
   });
 
-  it('should have welcome screen', async () => {
-    await expect(element(by.id('welcome'))).toBeVisible();
+  it("should show user screen after tap", async () => {
+    await element(by.id("click-user")).tap();
+    await expect(element(by.text("Tu es sur user"))).toBeVisible();
   });
 
-  it('should show hello screen after tap', async () => {
-    await element(by.id('hello_button')).tap();
-    await expect(element(by.text('Hello!!!'))).toBeVisible();
+  it("should go back on home", async () => {
+    await element(by.id("click-back")).tap();
+    await expect(element(by.text("Tu es sur home"))).toBeVisible();
   });
 
-  it('should show world screen after tap', async () => {
-    await element(by.id('world_button')).tap();
-    await expect(element(by.text('World!!!'))).toBeVisible();
+  it("should show settings screen after tap", async () => {
+    await element(by.id("click-settings")).tap();
+    await expect(element(by.text("Tu es sur settings"))).toBeVisible();
+  });
+
+  // eslint-disable-next-line jest/no-identical-title
+  it("should go back on home", async () => {
+    await element(by.id("click-back")).tap();
+    await expect(element(by.text("Tu es sur home"))).toBeVisible();
   });
 });
