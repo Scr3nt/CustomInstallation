@@ -32,7 +32,8 @@
       "favicon": "./assets/favicon.png"
     },
     "scheme": "custominstallation",
-    "plugins": ["@config-plugins/detox"]
+    "plugins": ["@config-plugins/detox"],
+    "jsEngine": "hermes"
     
   }
 }
