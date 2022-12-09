@@ -1610,6 +1610,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@legendapp/state@^0.23.0":
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/@legendapp/state/-/state-0.23.0.tgz#7f19f1df1981817c667e9befd826384f297f95b7"
+  integrity sha512-12WYfmZ8n+LOZVe3vR4tQV1zPb1K1EOFeVPdDK/fq1mGWZHOpduAFZbwF5sbsFPA4KtsSYD2SfghtNucN420ow==
+
 "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
   version "5.1.1-v1"
   resolved "https://registry.yarnpkg.com/@nicolo-ribaudo/eslint-scope-5-internals/-/eslint-scope-5-internals-5.1.1-v1.tgz#dbf733a965ca47b1973177dc0bb6c889edcfb129"
