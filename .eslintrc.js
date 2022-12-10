@@ -38,7 +38,7 @@ module.exports = {
     ],
     "prefer-const": "error",
     "react-native/no-inline-styles": "error",
-    "no-console": "warn",
+    "no-console": ["error", { allow: ["warn", "error"] }],
   },
   settings: {
     react: {
