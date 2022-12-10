@@ -6,10 +6,15 @@ export default function useButtonsStyles() {
   const theme = useTheme<Theme>();
 
   const styles = {
-    Button: { backgroundColor: theme.colors.red, padding: 10 } as ViewStyle,
+    Button: {
+      backgroundColor: theme.colors.red,
+      padding: 10,
+      borderRadius: 6,
+    } as ViewStyle,
     CustomButton: {
       backgroundColor: theme.colors.blue,
       padding: 10,
+      borderRadius: 6,
     } as ViewStyle,
   };
 
