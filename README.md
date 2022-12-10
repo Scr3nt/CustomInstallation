@@ -3,7 +3,8 @@
 ## Liste des librairies
 
 - Expo Router (pour la navigation)
-- Expo Localization
+- i18n (pour la traduction)
+- Expo Localization (pour la traduction)
 - React Navigation
 - Reanimated (pour les animations)
 - Segment
