@@ -1,18 +1,28 @@
 import Button from "@/src/components/Buttons/Button";
 import CustomButton from "@/src/components/Buttons/CustomButton";
+import { useStyles } from "@/src/hooks/useStyles";
 import i18n from "@/src/i18n/i18n";
 import theme from "@/theme";
 import { useLink } from "expo-router";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function Home() {
   const link = useLink();
+  const styles = useStyles({
+    container: {
+      justifyContent: "center",
+      alignItems: "center",
+      flex: 1,
+      backgroundColor: theme.colors.green,
+    },
+    space_bottom: {
+      marginBottom: 5,
+    },
+  });
+
   return (
-    <View
-      testID="home"
-      style={[styles.container, { backgroundColor: theme.colors.green }]}
-    >
+    <View testID="home" style={[styles.container]}>
       <Button
         testID="click-user"
         onPress={() => link.push("/user")}
@@ -32,14 +42,3 @@ export default function Home() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    justifyContent: "center",
-    alignItems: "center",
-    flex: 1,
-  },
-  space_bottom: {
-    marginBottom: 5,
-  },
-});

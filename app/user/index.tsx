@@ -1,8 +1,17 @@
+import { useStyles } from "@/src/hooks/useStyles";
 import { useLink } from "expo-router";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 
 export default function User() {
   const link = useLink();
+  const styles = useStyles({
+    container: {
+      justifyContent: "center",
+      alignItems: "center",
+      flex: 1,
+      backgroundColor: "lightblue",
+    },
+  });
 
   return (
     <View style={styles.container}>
@@ -13,11 +22,3 @@ export default function User() {
     </View>
   );
 }
-const styles = StyleSheet.create({
-  container: {
-    justifyContent: "center",
-    alignItems: "center",
-    flex: 1,
-    backgroundColor: "lightblue",
-  },
-});
