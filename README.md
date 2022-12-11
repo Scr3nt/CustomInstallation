@@ -5,7 +5,6 @@
 - Expo Router (pour la navigation)
 - i18n (pour la traduction)
 - Expo Localization (pour la traduction)
-- React Navigation
 - Reanimated (pour les animations)
 - Segment
 - Legend State
