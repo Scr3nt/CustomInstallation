@@ -1,16 +1,12 @@
 import ResponsiveLayout from "@/src/components/Layouts/ResponsiveLayout";
-import theme from "@/theme";
-import { ThemeProvider } from "@shopify/restyle";
 
 import Home from "./home";
 
 export default function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <ResponsiveLayout
-        renderOnPhone={() => <Home />}
-        renderOnTablet={() => <Home />}
-      />
-    </ThemeProvider>
+    <ResponsiveLayout
+      renderOnPhone={() => <Home />}
+      renderOnTablet={() => <Home />}
+    />
   );
 }

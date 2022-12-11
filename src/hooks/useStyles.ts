@@ -1,6 +1,3 @@
-/* eslint-disable comma-dangle */
-import { Theme } from "@/theme";
-import { useTheme } from "@shopify/restyle";
 import { useMemo } from "react";
 import {
   ImageStyle,
@@ -10,7 +7,7 @@ import {
   useWindowDimensions,
 } from "react-native";
 
-import usePresetStyles from "./usePresets";
+import useTheme from "./useTheme";
 
 export function useStyles<StylesName>(
   customStyle: {
@@ -19,13 +16,12 @@ export function useStyles<StylesName>(
   deps: unknown[] = []
 ) {
   const { width } = useWindowDimensions();
-  const presets = usePresetStyles();
-  const theme = useTheme<Theme>();
+  const theme = useTheme();
 
   const styles = useMemo(() => {
     return StyleSheet.create(customStyle);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [customStyle, width, theme, presets, ...deps]);
+  }, [customStyle, width, theme, ...deps]);
 
   return styles;
 }

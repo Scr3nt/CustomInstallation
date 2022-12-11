@@ -1,4 +1,4 @@
-const theme = {
+const dark = {
   colors: {
     green: "#05E498",
     yellow: "#FED234",
@@ -10,8 +10,9 @@ const theme = {
     white: "#EAE8E2",
     grey: "#7D7D7D",
     black: "#111111",
+    background: "#111111",
+    text: "#EAE8E2",
   },
 };
 
-export type Theme = typeof theme;
-export default theme;
+export default dark;
