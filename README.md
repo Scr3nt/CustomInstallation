@@ -9,7 +9,6 @@
 - Segment
 - Legend State
 - FlashList
-- Restyle
 - React Query
 - apisauce (pour des requetes comme axios mais on est sur de la bonne compatibilité de axios)
 - MMKV (async storage plus performant)
