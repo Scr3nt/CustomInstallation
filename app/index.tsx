@@ -1,4 +1,4 @@
-import ResponsiveLayout from "@/src/components/Layouts/responsive-layout";
+import ResponsiveLayout from "@/src/components/Layouts/ResponsiveLayout";
 import theme from "@/theme";
 import { ThemeProvider } from "@shopify/restyle";
 
