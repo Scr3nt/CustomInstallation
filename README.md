@@ -6,7 +6,6 @@
 - i18n (pour la traduction)
 - Expo Localization (pour la traduction)
 - Reanimated (pour les animations)
-- Segment
 - Legend State
 - FlashList
 - React Query
@@ -26,3 +25,4 @@
 - RevenueCat (pour les achats inapp)
 - Supabase (pour le back (GraphQL))
 - Rive (pour les animations)
+- Segment (pour le tracking)
