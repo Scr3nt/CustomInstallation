@@ -8,8 +8,8 @@ import theme from "../themes/theme";
 export default function useTheme() {
   const [themeType, setThemeType] = useState(storage.getString("theme"));
 
-  const _ = storage.addOnValueChangedListener((changedKey) => {
-    const newValue = storage.getString(changedKey);
+  const _ = storage.addOnValueChangedListener(() => {
+    const newValue = storage.getString("theme");
     setThemeType(newValue);
   });
 
