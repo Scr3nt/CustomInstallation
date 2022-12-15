@@ -1,5 +1,10 @@
 module.exports = {
-  importOrder: ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
+  importOrder: [
+    "^@?react(-native)?",
+    "<THIRD_PARTY_MODULES>",
+    "^@/src",
+    "^[./]",
+  ],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
 };

@@ -5,6 +5,7 @@
 - Expo Router (pour la navigation)
 - i18n (pour la traduction)
 - Expo Localization (pour la traduction)
+- Expo Font
 - Reanimated (pour les animations)
 - Legend State
 - FlashList

@@ -1,6 +1,8 @@
-import { useStyles } from "@/src/hooks/useStyles";
-import { useLink } from "expo-router";
 import { Text, TouchableOpacity, View } from "react-native";
+
+import { useLink } from "expo-router";
+
+import { useStyles } from "@/src/hooks/useStyles";
 
 export default function User() {
   const link = useLink();

@@ -1,12 +1,14 @@
+import React from "react";
+import { Text, View } from "react-native";
+
+import { useLink } from "expo-router";
+
 import Button from "@/src/components/Buttons/Button";
 import CustomButton from "@/src/components/Buttons/CustomButton";
 import { storage } from "@/src/consts";
 import { useStyles } from "@/src/hooks/useStyles";
 import useTheme from "@/src/hooks/useTheme";
 import i18n from "@/src/i18n/i18n";
-import { useLink } from "expo-router";
-import React from "react";
-import { Text, View } from "react-native";
 
 export default function Home() {
   const link = useLink();
