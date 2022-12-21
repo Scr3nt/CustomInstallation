@@ -6,6 +6,7 @@
 - i18n (pour la traduction)
 - Expo Localization (pour la traduction)
 - Expo Font
+- Expo Image
 - Reanimated (pour les animations)
 - Legend State
 - FlashList
